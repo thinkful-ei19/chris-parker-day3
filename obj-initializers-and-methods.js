@@ -1,12 +1,13 @@
 let loaf = {
     flour: 300,
     water: 210,
-
-    hydration: function(flour, water){
-        console.log((water / flour) * 100);
+    hydration: function(water, flour){
+        console.log(this);
+        return (this.water / this.flour) * 100;
     }
-}
-console.log(loaf.flour)
-console.log(loaf.water)
+};
 
-console.log(loaf.hydration())
+console.log(loaf.flour);
+console.log(loaf.water);
+
+console.log(loaf.hydration());
